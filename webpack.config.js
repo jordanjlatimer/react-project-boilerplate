@@ -22,12 +22,29 @@ module.exports = {
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
-        loader: "ts-loader",
+        use: [
+          {
+            loader: "ts-loader",
+            options: {
+              transpileOnly: true
+            }
+          }
+        ]
       },
       {
         test: /\.sass?$/,
         exclude: /node_modules/,
-        use: [{ loader: "style-loader" }, { loader: "css-loader" }, { loader: "sass-loader" }],
+        use: [
+          { 
+            loader: "style-loader" 
+          }, 
+          { 
+            loader: "css-loader" 
+          }, 
+          { 
+            loader: "sass-loader" 
+          }
+        ],
       },
     ],
   },
@@ -44,9 +61,12 @@ module.exports = {
       openAnalyzer: false,
     }),
   ],
-  devtool: "source-map",
+  devtool: "eval",
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     port: 3000,
   },
+  performance: {
+    hints: process.env.NODE_ENV === "production" ? "warning" : false
+  }
 };
