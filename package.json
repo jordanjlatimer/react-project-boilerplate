@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --hot",
     "build": "webpack",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "report": "open ./dev/report.html"
   },
   "author": "jordanjlatimer",
   "license": "ISC",
