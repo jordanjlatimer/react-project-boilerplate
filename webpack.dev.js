@@ -55,7 +55,7 @@ module.exports = {
     contentBase: path.join(__dirname, "dist"),
     port: 3000,
     hot: true,
-    noInfo: true
+    stats: "minimal"
   },
   performance: {
     hints: false
