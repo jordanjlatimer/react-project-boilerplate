@@ -1,2 +1,2 @@
 # project-starter
-Boilerplate for my web projects.
+My preferred boilerplate web applications. Will probably be a perpetual work in progress.
