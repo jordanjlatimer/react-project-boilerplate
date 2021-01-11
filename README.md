@@ -1,2 +1,2 @@
-# web-project-starter
-My preferred boilerplate web applications. Will probably be a perpetual work in progress.
+# react-project-boilerplate
+My preferred boilerplate for web applications based on React.
